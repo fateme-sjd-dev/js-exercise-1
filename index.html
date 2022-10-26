@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    First Name <input type="text" id="txtFName" /><br />
+    Last Name <input type="text" id="txtLName" /><br />
+    <input type="button" value="Add" id="btnAdd" onclick="addPerson(this)" />
+    <hr />
+    <input type="button" value="Delete" onclick="deleteSelected()" />
+    <table id="tblPersons" align="center" border="1" width="300">
+      <tr>
+        <th>
+          <input type="checkbox" id="chkAll" onclick="chkAll_click(this)" />
+        </th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Operations</th>
+      </tr>
+    </table>
+
+    <script src="js-ex-1.js"></script>
+  </body>
+</html>
